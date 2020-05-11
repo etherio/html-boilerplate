@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Create New Account - Ethereal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link herf="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/floating-labels.css" rel="stylesheet" />
+
+    <style>
+        main {
+            padding: 20px 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="container-md mb-2 mt-2">
+        <nav class="row justify-content">
+            <!-- Brand Logo -->
+            <div class="col-sm">
+                <a href="/"><img class="mt-1" src=" /assets/img/ethereal-logo.png" alt="ethereal-logo"></a>
+            </div>
+
+            <!-- Menu -->
+            <ul class="col nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary btn-sm mt-1" href="./login.html">Log In</a>
+                    <a class="btn btn-primary btn-sm mt-1" href="./register.html">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <main>
+        <div class="card" style="margin:auto;min-width:360px;max-width:480px;">
+            <div class="card-header">Create New Account</div>
+            <div class="card-body">
+                <form class="form-signin" method="POST" action="https://httpbin.org/post">
+                    <input type="hidden" name="_csrf" value="{csrf_token_here}" />
+                    <div class="form-label-group">
+                        <input type="text" name="username" class="form-control" placeholder="Username" required
+                            autofocus />
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required />
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="password" name="password" class="form-control" placeholder="Password" required />
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form-label-group">
+                        <input type="password" name="repassword" class="form-control" placeholder="Verify Password"
+                            required>
+                        <label for="repassword">Verify Password</label>
+                    </div>
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" name="accepted" value="1" required />
+                            I accepted all the <a href="/terms-conditions">Terms & Conditions</a>.
+                        </label>
+                    </div>
+                    <button class="btn btn-outline-primary" type="submit">Register</button>
+                    <a class="btn btn-outline-danger" href="?reset=1">Reset</a>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="">
+        <p class="mt-5 mb-3 text-muted text-center">
+            &copy; 2020 <span class="text-muted"><a href="/">Ethereal</a></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
