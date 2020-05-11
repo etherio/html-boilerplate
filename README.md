@@ -2,4 +2,5 @@
 
 ![Ethereal](assets/img/ethereal-logo.png)
 
-- [Bootstrap v4.4.1](etherio@873076510ae8416f0105fd91cd48f3820e8a7d3e)
+- [Bootstrap v4.4.1](etherio/html-boilerplate)
+- etherio/html-boilerplate@4ea1645b6cadbb216cff5a44b9812561bdba39f5
