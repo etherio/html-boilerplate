@@ -1,5 +1,7 @@
 # HTML Boilerplate
 
-![Ethereal](assets/img/ethereal-logo.png)
+![Ethereal](assets/img/ethereal-logo.png "Ethereal")
 
-- [Bootstrap v4.4.1](/../../tree/bootstrap)
+- [Bootstrap CSS Framework]
+
+[Bootstrap CSS Framework]: ../../tree/bootstrap "branch/bootstrap"
